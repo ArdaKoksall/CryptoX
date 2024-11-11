@@ -89,12 +89,13 @@ flutter run
 9. Welcome to the world of cryptocurrency (demo)trading with Cryptox!
 
 ## Project Structure
-The project is structured as follows:
-- **lib**: 
 
+The project is structured as follows:
+
+- **lib**:
   - **main.dart**: The entry point of the application.
-  
-  - **crypto**: 
+
+  - **crypto**:
     - **api_service**: Contains the API service for fetching cryptocurrency data.
     - **crypto**: Contains the data model for cryptocurrency information.
     - **crypto_chart**: Contains the data model for cryptocurrency chart data.
@@ -102,22 +103,23 @@ The project is structured as follows:
     - **crypto_provider**: Contains the provider for managing cryptocurrency data.
     - **portfolio_crypto**: Contains the data model for portfolio cryptocurrencies.
 
-  - **design**: 
+  - **design**:
     - **app_colors**: Contains the color constants for the application.
     - **cyber_lines_painter**: Contains the custom painter for the Wallet page.
     - **grid_painter**: Contains the custom painter for the Cyber Lines.
     - **matrix**: Contains the Matrix rain animation for the first screens.
-    
+
   - **pages/first**:
-    -**login_page**: Contains the login page. 
-    -**signup**: Contains the signup page.
-    -**forgot_password**: Contains the forgot password page.
-  
+    - **login_page**: Contains the login page.
+    - **signup**: Contains the signup page.
+    - **forgot_password**: Contains the forgot password page.
+
   - **pages/second**:
-    -**home_page**: Contains the home page.
-    -**page_controller**: Contains the page controller.
-    -**trade_page**: Contains the trade page.
-    -**wallet_page**: Contains the wallet page.
+    - **home_page**: Contains the home page.
+    - **page_controller**: Contains the page controller.
+    - **trade_page**: Contains the trade page.
+    - **wallet_page**: Contains the wallet page.
+
 
 
 
