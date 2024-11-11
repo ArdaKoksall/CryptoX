@@ -90,35 +90,34 @@ flutter run
 
 ## Project Structure
 The project is structured as follows:
-lib/
-├── main.dart                      # Entry point of the application
+- **lib**: 
 
-├── crypto/                         # Cryptocurrency-related functionality
-│   ├── api_service.dart            # Manages API requests to fetch cryptocurrency data
-│   ├── crypto.dart                 # Data model for cryptocurrency information
-│   ├── crypto_chart.dart           # Data model specifically for cryptocurrency chart data
-│   ├── crypto_page.dart            # UI for displaying cryptocurrency data
-│   ├── crypto_provider.dart        # Manages state and data flow for cryptocurrency information
-│   └── portfolio_crypto.dart       # Data model for portfolio-related cryptocurrencies
+  - **main.dart**: The entry point of the application.
+  
+  - **crypto**: 
+    - **api_service**: Contains the API service for fetching cryptocurrency data.
+    - **crypto**: Contains the data model for cryptocurrency information.
+    - **crypto_chart**: Contains the data model for cryptocurrency chart data.
+    - **crypto_page**: Contains the page for displaying cryptocurrency data.
+    - **crypto_provider**: Contains the provider for managing cryptocurrency data.
+    - **portfolio_crypto**: Contains the data model for portfolio cryptocurrencies.
 
-├── design/                         # Design-related assets and themes
-│   ├── app_colors.dart             # Color constants for consistent theming
-│   ├── cyber_lines_painter.dart    # Custom painter for cyber-style visuals
-│   ├── grid_painter.dart           # Custom painter for cyber grid effects
-│   └── matrix.dart                 # Matrix rain animation for initial screens
-
-├── pages/                          # Application screens
-│   ├── first/                      # Initial screens
-│   │   ├── login_page.dart         # Login page
-│   │   ├── signup.dart             # Signup page
-│   │   └── forgot_password.dart    # Password recovery page
-│   
-│   └── second/                     # Main application pages
-│       ├── home_page.dart          # Main landing page
-│       ├── page_controller.dart    # Controls page navigation
-│       ├── trade_page.dart         # Cryptocurrency trading page
-│       └── wallet_page.dart        # User's cryptocurrency wallet page
-
+  - **design**: 
+    - **app_colors**: Contains the color constants for the application.
+    - **cyber_lines_painter**: Contains the custom painter for the Wallet page.
+    - **grid_painter**: Contains the custom painter for the Cyber Lines.
+    - **matrix**: Contains the Matrix rain animation for the first screens.
+    
+  - **pages/first**:
+    -**login_page**: Contains the login page. 
+    -**signup**: Contains the signup page.
+    -**forgot_password**: Contains the forgot password page.
+  
+  - **pages/second**:
+    -**home_page**: Contains the home page.
+    -**page_controller**: Contains the page controller.
+    -**trade_page**: Contains the trade page.
+    -**wallet_page**: Contains the wallet page.
 
 
 
