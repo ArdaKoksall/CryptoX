@@ -108,7 +108,7 @@ The project is structured as follows:
     - **grid_painter**: Contains the custom painter for the Cyber Lines.
     - **matrix**: Contains the Matrix rain animation for the first screens.
     
-  - **pages**:
+  - pages:
     -**first**:
       -**login_page**: Contains the login page. 
       -**signup**: Contains the signup page.
