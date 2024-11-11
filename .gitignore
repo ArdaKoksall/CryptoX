@@ -18,6 +18,7 @@ migrate_working_dir/
 
 # Firebase files
 firebase_options.dart
+firebase.json
 google-services.json
 GoogleService-Info.plist
 android/app/google-services.json
