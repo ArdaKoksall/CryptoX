@@ -49,15 +49,28 @@ The app integrates with Firebase for authentication and uses shared preferences 
 - **Error Handling**: Provides informative error messages for various scenarios.
 - **User-friendly Interface**: Simple and intuitive UI for easy navigation.
 - **Custom Animations**: Includes custom animations for a more engaging user experience.
+- **Bot for Navigation and Trading**: A chatbot that helps users navigate the app and perform trading actions.
+- **IMPORTANT**: This app is for educational purposes only and should not be used as a source for real trading.
+- **COIN GECKO API**: The app uses the CoinGecko API to fetch real-time cryptocurrency data because of the free version of the api sometimes the graphs of the cryptos can be seem empty.
 
 
 ## Screenshots
 ![Login Screen](screenshots/login_screen.png)
-![Main Screen](screenshots/main_screen.png)
-![Market Stats Screen](screenshots/market_stats_screen.png)
-![Trade Screen](screenshots/trade_screen.png)
-![Portfolio Screen](screenshots/portfolio_screen.png)
-![Wallet Screen](screenshots/wallet_screen.png)
+![Signup Screen](screenshots/signup_screen.png)
+![Forgot Password Screen](screenshots/reset_password.png)
+![Home Screen](screenshots/homescreen.png)
+![Bot Screen](screenshots/bot.png)
+![Bot Navigate Screen](screenshots/bot_navigate.png)
+![Bot Buy Screen](screenshots/bot_buy.png)
+![Bot Sell Screen](screenshots/bot_sell.png)
+![Crypto Screen](screenshots/crypto1.png)
+![Crypto Screen 2](screenshots/crypto2.png)
+![Wallet Screen](screenshots/wallet1.png)
+![Wallet Screen 2](screenshots/wallet2.png)
+![Trade Screen](screenshots/trade.png)
+![Trade Screen Liked](screenshots/trade_liked.png)
+![Trade Screen Search](screenshots/trade_search.png)
+
 
 ## Installation
 1. Clone the repository:
@@ -86,7 +99,8 @@ flutter run
 6. View your wallet balance and profit/loss in the Wallet tab.
 7. Log out using the Logout button in the Profile tab.
 8. Experience a user-friendly interface with custom animations for a more engaging user experience.
-9. Welcome to the world of cryptocurrency (demo)trading with Cryptox!
+9. Use the bot for navigation and trading.
+10. Welcome to the world of cryptocurrency (demo)trading with Cryptox!
 
 ## Project Structure
 
@@ -120,6 +134,8 @@ The project is structured as follows:
     - **trade_page**: Contains the trade page.
     - **wallet_page**: Contains the wallet page.
 
+  - **chatbot**:
+    - **chatbot**: Contains the bot for navigation and trading.
 
 
 

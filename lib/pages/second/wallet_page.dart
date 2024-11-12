@@ -986,6 +986,7 @@ class WalletPageState extends State<WalletPage> with TickerProviderStateMixin {
             id: item.id,
             priceChangePercentage: item.priceChangePercentage,
           ),
+          openedFromChatbot: false,
         ),
       ),
     );

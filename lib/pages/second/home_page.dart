@@ -108,41 +108,43 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            const Color(0xFF0A0A0A),
-            const Color(0xFF1A1A1A),
-            Colors.black.withBlue(30),
-          ],
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              const Color(0xFF0A0A0A),
+              const Color(0xFF1A1A1A),
+              Colors.black.withBlue(30),
+            ],
+          ),
         ),
-      ),
-      child: SafeArea(
-        child: CustomScrollView(
-          physics: const BouncingScrollPhysics(),
-          slivers: [
-            _buildAppBar(),
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _buildProfileSection(),
-                    const SizedBox(height: 24),
-                    _buildBalanceCard(),
-                    const SizedBox(height: 24),
-                    _buildFavoritesHeader(),
-                    const SizedBox(height: 16),
-                    _buildFavoritesList(),
-                  ],
+        child: SafeArea(
+          child: CustomScrollView(
+            physics: const BouncingScrollPhysics(),
+            slivers: [
+              _buildAppBar(),
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildProfileSection(),
+                      const SizedBox(height: 24),
+                      _buildBalanceCard(),
+                      const SizedBox(height: 24),
+                      _buildFavoritesHeader(),
+                      const SizedBox(height: 16),
+                      _buildFavoritesList(),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -471,7 +473,8 @@ class _HomePageState extends State<HomePage> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => CryptoDetailPage(crypto: crypto),
+                builder: (context) =>
+                    CryptoDetailPage(crypto: crypto, openedFromChatbot: false),
               ),
             );
           },

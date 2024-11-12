@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:cryptox/chatbot/chatbot.dart';
 import 'package:cryptox/pages/second/home_page.dart';
 import 'package:cryptox/pages/second/trade_page.dart';
 import 'package:cryptox/pages/second/wallet_page.dart';
@@ -38,6 +39,7 @@ class _MainPageState extends State<MainPage> {
           TradePage(),
         ],
       ),
+      floatingActionButton: const ChatbotWidget(),
       bottomNavigationBar: _buildBottomNavBar(),
     );
   }

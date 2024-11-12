@@ -7,8 +7,14 @@ import 'package:intl/intl.dart';
 
 class CryptoDetailPage extends StatefulWidget {
   final Crypto crypto;
+  final bool openedFromChatbot;
+  final bool? isBuy;
 
-  const CryptoDetailPage({super.key, required this.crypto});
+  const CryptoDetailPage(
+      {super.key,
+      required this.crypto,
+      required this.openedFromChatbot,
+      this.isBuy});
 
   @override
   CryptoDetailPageState createState() => CryptoDetailPageState();
@@ -48,6 +54,11 @@ class CryptoDetailPageState extends State<CryptoDetailPage>
       CurvedAnimation(parent: _animationController, curve: Curves.easeInOut),
     );
     _animationController.forward();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (widget.openedFromChatbot) {
+        showTradeDialog(widget.isBuy!);
+      }
+    });
   }
 
   @override
@@ -174,7 +185,7 @@ class CryptoDetailPageState extends State<CryptoDetailPage>
     }
   }
 
-  void _showTradeDialog(bool isBuy) {
+  void showTradeDialog(bool isBuy) {
     _amountController.clear();
     _tradeAmount = 0.0;
 
@@ -1101,7 +1112,7 @@ class CryptoDetailPageState extends State<CryptoDetailPage>
       children: [
         Expanded(
           child: _buildGlassButton(
-            onPressed: () => _showTradeDialog(true),
+            onPressed: () => showTradeDialog(true),
             icon: Icons.add_circle_outline,
             label: 'Buy',
             gradient: [
@@ -1114,7 +1125,7 @@ class CryptoDetailPageState extends State<CryptoDetailPage>
         const SizedBox(width: 16),
         Expanded(
           child: _buildGlassButton(
-            onPressed: () => _showTradeDialog(false),
+            onPressed: () => showTradeDialog(false),
             icon: Icons.remove_circle_outline,
             label: 'Sell',
             gradient: [

@@ -353,7 +353,10 @@ class TradePageState extends State<TradePage>
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => CryptoDetailPage(crypto: crypto),
+                builder: (context) => CryptoDetailPage(
+                  crypto: crypto,
+                  openedFromChatbot: false,
+                ),
               ),
             );
           },
