@@ -18,9 +18,7 @@ The app integrates with Firebase for authentication and uses shared preferences 
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 
 ## Technologies
@@ -54,22 +52,83 @@ The app integrates with Firebase for authentication and uses shared preferences 
 - **COIN GECKO API**: The app uses the CoinGecko API to fetch real-time cryptocurrency data because of the free version of the api sometimes the graphs of the cryptos can be seem empty.
 
 
-## Screenshots
-![Login Screen](screenshots/login_screen.png)
-![Signup Screen](screenshots/signup_screen.png)
-![Forgot Password Screen](screenshots/reset_password.png)
-![Home Screen](screenshots/homescreen.png)
-![Bot Screen](screenshots/bot.png)
-![Bot Navigate Screen](screenshots/bot_navigate.png)
-![Bot Buy Screen](screenshots/bot_buy.png)
-![Bot Sell Screen](screenshots/bot_sell.png)
-![Crypto Screen](screenshots/crypto1.png)
-![Crypto Screen 2](screenshots/crypto2.png)
-![Wallet Screen](screenshots/wallet1.png)
-![Wallet Screen 2](screenshots/wallet2.png)
-![Trade Screen](screenshots/trade.png)
-![Trade Screen Liked](screenshots/trade_liked.png)
-![Trade Screen Search](screenshots/trade_search.png)
+# Screenshots
+
+<details>
+  <summary>Login Screen</summary>
+  <img src="screenshots/login_screen.png" alt="Login Screen">
+</details>
+
+<details>
+  <summary>Signup Screen</summary>
+  <img src="screenshots/signup_screen.png" alt="Signup Screen">
+</details>
+
+<details>
+  <summary>Forgot Password Screen</summary>
+  <img src="screenshots/reset_password.png" alt="Forgot Password Screen">
+</details>
+
+<details>
+  <summary>Home Screen</summary>
+  <img src="screenshots/homescreen.png" alt="Home Screen">
+</details>
+
+<details>
+  <summary>Bot Screen</summary>
+  <img src="screenshots/bot.png" alt="Bot Screen">
+</details>
+
+<details>
+  <summary>Bot Navigate Screen</summary>
+  <img src="screenshots/bot_navigate.png" alt="Bot Navigate Screen">
+</details>
+
+<details>
+  <summary>Bot Buy Screen</summary>
+  <img src="screenshots/bot_buy.png" alt="Bot Buy Screen">
+</details>
+
+<details>
+  <summary>Bot Sell Screen</summary>
+  <img src="screenshots/bot_sell.png" alt="Bot Sell Screen">
+</details>
+
+<details>
+  <summary>Crypto Screen</summary>
+  <img src="screenshots/crypto1.png" alt="Crypto Screen">
+</details>
+
+<details>
+  <summary>Crypto Screen 2</summary>
+  <img src="screenshots/crypto2.png" alt="Crypto Screen 2">
+</details>
+
+<details>
+  <summary>Wallet Screen</summary>
+  <img src="screenshots/wallet1.png" alt="Wallet Screen">
+</details>
+
+<details>
+  <summary>Wallet Screen 2</summary>
+  <img src="screenshots/wallet2.png" alt="Wallet Screen 2">
+</details>
+
+<details>
+  <summary>Trade Screen</summary>
+  <img src="screenshots/trade.png" alt="Trade Screen">
+</details>
+
+<details>
+  <summary>Trade Screen Liked</summary>
+  <img src="screenshots/trade_liked.png" alt="Trade Screen Liked">
+</details>
+
+<details>
+  <summary>Trade Screen Search</summary>
+  <img src="screenshots/trade_search.png" alt="Trade Screen Search">
+</details>
+
 
 
 ## Installation
@@ -155,5 +214,6 @@ The project is structured as follows:
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 
